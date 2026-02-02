@@ -28,9 +28,13 @@ This confirms two processes performed the same action.
 
 ---
 
-## Cause  
+## Cause
 
-A restart caused **two instances of the cron process** to run at the same time.
+- A system restart resulted in two instances of the application running at the same time.
+
+- The previous process did not shut down properly (OS level), while a new process started as expected.
+
+- With both old and new processes active, the scheduled cron job ran twice, causing the same order to be processed more than once.
 
 ---
 
