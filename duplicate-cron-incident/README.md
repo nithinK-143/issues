@@ -10,7 +10,7 @@ Order **L2601001700** was cancelled twice by the system causing duplicate stock 
 Two different PM2 process logs show the same order cancelled at the same time:
 
 #### - LIVE-v4-3-5-core-crons-out-9.log
-![Log showing first successful cancellation](https://screenrec.com/share/bLOGfYqKxE)
+![Log showing first successful cancellation](https://raw.githubusercontent.com/nithinK-143/issues/master/duplicate-cron-incident/09.png)
 
 ```
 Cancelling order L2601001700 placed at Fri Jan 30 2026 01:29:25 GMT+0530, should cancel by Sat Jan 31 2026 01:29:25 GMT+0530 cancelled on Sat Jan 31 2026 02:00:00 GMT+0530 (India Standard Time)
@@ -18,7 +18,7 @@ Successfully cancelled order L2601001700
 ```
 
 #### - LIVE-v4-3-5-core-crons-out-13.log
-![Log showing second successful cancellation](https://github.com/user-attachments/assets/c738b502-09b1-41ad-a2f5-15016108d3e1)
+![Log showing second successful cancellation](https://raw.githubusercontent.com/nithinK-143/issues/master/duplicate-cron-incident/13.png)
 ```
 Cancelling order L2601001700 placed at Fri Jan 30 2026 01:29:25 GMT+0530, should cancel by Sat Jan 31 2026 01:29:25 GMT+0530 cancelled on Sat Jan 31 2026 02:00:00 GMT+0530 (India Standard Time)
 Successfully cancelled order L2601001700
